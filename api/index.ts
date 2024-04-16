@@ -4,7 +4,7 @@ const app = express();
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-	res.sendFile(path.join(__dirname,'../views/index.html'));
+	res.sendFile(path.join(__dirname,'../view/index.html'));
 });
 app.get("/api", (req, res) => res.send("Express on Vercel"));
 
