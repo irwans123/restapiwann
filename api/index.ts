@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
 app.get('/dosc', function (req, res) {
 	res.sendFile(path.join(__dirname, '../view/dosc.html'));
 });
-app.use('/api', require("./api.ts"));
+app.use('/api', require(path.join(__dirname, './api.ts')));
 
 app.listen(3000, () => console.log(color("Server running on port 3000",'green')));
 
