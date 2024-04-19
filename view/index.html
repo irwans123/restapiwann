@@ -15,7 +15,7 @@
     <link href="css/ruang-admin.min.css" rel="stylesheet">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10/dist/sweetalert2.all.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10/dist/sweetalert2.all.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -47,25 +47,60 @@
                 <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap"
                     data-parent="#accordionSidebar">
                     <div class="bg-greydark py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Media Features</h6>
-                        <a class="collapse-item" href="api/tiktod/?url=MASUKIN_URL&apikey=MASUKIN_APIKEY">Tiktok
-                            Downloader</a>
-                        <a class="collapse-item"
-                            href="api/tiktod/stalk/?username=MASUKIN_USERNAME&apikey=MASUKIN_APIKEY">Tiktok Stalk</a>
+                        <h6 class="collapse-header">Media download</h6>
+                        <a class="collapse-item" href="api/download/ytmp4?url=MASUKIN_URL&apikey=MASUKIN_APIKEY" target="_blank">Youtube video</a>
+                        <a class="collapse-item" href="api/download/ytmp3?url=MASUKIN_URL&apikey=MASUKIN_APIKEY" target="_blank">Youtube audio</a>
+                        <a class="collapse-item" href="api/download/tiktok?url=MASUKIN_URL&apikey=MASUKIN_APIKEY" target="_blank">Tiktok Downloader</a>
+                        <a class="collapse-item" href="api/download/ig?url=MASUKIN_URL&apikey=MASUKIN_APIKEY" target="_blank">Instagram Downloader</a>
+                        <a class="collapse-item" href="api/downloader/facebook?url=MASUKIN_URL&apikey=MASUKIN_APIKEY" target="_blank">Instagram Downloader</a>
+                        <h6 class="collapse-header">Media stalk</h6>
+                        <a class="collapse-item" href="api/stalk/ig?username=MASUKIN_USERNAME&apikey=MASUKIN_APIKEY" target="_blank">Instagram Stalker</a>
+                        <a class="collapse-item" href="api/stalk/tiktok?username=MASUKIN_USERNAME&apikey=MASUKIN_APIKEY" target="_blank">Tiktok Stalker</a>
+                        <a class="collapse-item" href="api/stalk/npm?query=MASUKIN_QUERY&apikey=MASUKIN_APIKEY" target="_blank">Npm Stalker</a>
+                        <h6 class="collapse-header">Media search</h6>
+                        <a class="collapse-item" href="api/search/jarak?dari=bandung&ke=jakarta&apikey=MASUKIN_APIKEY" target="_blank">Jarak</a>
+                        <a class="collapse-item" href="api/search/pinterest?query=MASUKIN_QUERY&apikey=MASUKIN_APIKEY" target="_blank">Pinterest</a>
                     </div>
                 </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGithub"
                     aria-expanded="true" aria-controls="collapseGithub">
-                    <i class="fas fa-fw fa-book"></i>
-                    <span>Random API</span>
+                    <i class="fas fa-star-and-crescent"></i>
+                    <span>Islamic API</span>
                 </a>
                 <div id="collapseGithub" class="collapse" aria-labelledby="headingGithub"
                     data-parent="#accordionSidebar">
                     <div class="bg-greydark py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Random API</h6>
-                        <a class="collapse-item" href="api/randomquote?apikey=MASUKIN_APIKEY">Random Quotes</a>
+                        <h6 class="collapse-header">Islamic API</h6>
+                        <a class="collapse-item" href="api/muslim/asmaulhusna?apikey=MASUKIN_APIKEY" target="_blank">Asmaul Husna</a>
+                        <a class="collapse-item" href="api/muslim/jadwalshalat?kota=MASUKAN_KOTA&apikey=MASUKIN_APIKEY" target="_blank">Jadwal Shalat</a>
+                        <a class="collapse-item" href="api/muslim/hadits?kitab=MASUKAN_KITAB&nomor=MASUKAN_NOMOR&apikey=MASUKIN_APIKEY" target="_blank">Hadist</a>
+                        <a class="collapse-item" href="api/muslim/quran?surah=MASUKAN_SURAH&ayat=MASUKAN_AYAT&apikey=MASUKIN_APIKEY" target="_blank">AL-Quran</a>
+                        <a class="collapse-item" href="api/muslim/kisahnabi?nabi=MASUKAN_NABI&apikey=MASUKIN_APIKEY" target="_blank">Kisah Nabi</a>
+                        <a class="collapse-item" href="api/muslim/tahlil?apikey=MASUKIN_APIKEY" target="_blank">Tahlil</a>
+                        <a class="collapse-item" href="api/muslim/ayatkursi?apikey=MASUKIN_APIKEY" target="_blank">Ayat Kursi</a>
+                        <a class="collapse-item" href="api/muslim/doaharian?apikey=MASUKIN_APIKEY" target="_blank">Doa Harian</a>
+                        <a class="collapse-item" href="api/muslim/niatshalat?apikey=MASUKIN_APIKEY" target="_blank">Niat Shalat</a>
+                        <a class="collapse-item" href="api/muslim/bacaanshalat?apikey=MASUKIN_APIKEY" target="_blank">Bacaan Shalat</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseImage"
+                    aria-expanded="true" aria-controls="collapseImage">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Random Image API</span>
+                </a>
+                <div id="collapseImage" class="collapse" aria-labelledby="headingImage"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-greydark py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Walpaper API</h6>
+                        <a class="collapse-item" href="api/wallpaper/aesthetic?apikey=MASUKIN_APIKEY" target="_blank">wallpaper Aesthetic</a>
+                        <a class="collapse-item" href="api/wallpaper/ciberspace?apikey=MASUKIN_APIKEY" target="_blank">wallpaper CiberSpace</a>
+                        <a class="collapse-item" href="api/wallpaper/game?apikey=MASUKIN_APIKEY" target="_blank">wallpaper Game</a>
+                        <a class="collapse-item" href="api/wallpaper/programming?apikey=MASUKIN_APIKEY" target="_blank">wallpaper Programming</a>
+                        <a class="collapse-item" href="api/wallpaper/moutain?apikey=MASUKIN_APIKEY" target="_blank">wallpaper Montain View</a>
                     </div>
                 </div>
             </li>
@@ -81,18 +116,6 @@
                         <h6 class="collapse-header">Text Maker API</h6>
                         <a class="collapse-item"
                             href="api/textmaker?text=halo&text2=hai&theme=glitch&apikey=MASUKIN_APIKEY">Glitch</a>
-                        <a class="collapse-item"
-                            href="api/textmaker?text=halo&text2=hai&text3=gwganteng&theme=google-suggestion&apikey=MASUKIN_APIKEY">Google
-                            Suggestion</a>
-                        <a class="collapse-item"
-                            href="api/textmaker/game?text=halo&text2=hai&theme=pubg&apikey=MASUKIN_APIKEY">PUBG</a>
-                        <a class="collapse-item"
-                            href="api/textmaker/game?text=halo&text2=hai&theme=battlefield&apikey=MASUKIN_APIKEY">BattleField</a>
-                        <a class="collapse-item"
-                            href="api/textmaker/senja?text=Zhirrr&theme=coffee-cup&apikey=MASUKIN_APIKEY">Coffee Cup</a>
-                        <a class="collapse-item"
-                            href="api/textmaker/senja?text=Zhirrr&theme=coffee-cup2&apikey=MASUKIN_APIKEY">Coffee Cup
-                            2</a>
                     </div>
                 </div>
             </li>
@@ -105,226 +128,237 @@
                 <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
                     <div class="bg-greydark py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Other Menu</h6>
-                        <a class="collapse-item" href="api/nulis?text=ZahirGanteng&apikey=MASUKAN_APIKEY">Nulis Buku</a>
-                        <a class="collapse-item"
-                            href="api/infonpm?query=zhirrr-api&hostname=zhirrr&apikey=MASUKAN_APIKEY">Info NPM</a>
-                        <a class="collapse-item" href="api/short/tiny?url=google.com&apikey=MASUKAN_APIKEY">Short
-                            Link</a>
+                        <a class="collapse-item" href="api/nulis?text=Rorr&apikey=MASUKAN_APIKEY">Nulis Buku</a>
                     </div>
                 </div>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Contact
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/irwns23_" target="_blank">
+                    <i class="fab fa-fw fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://wa.me/6285646856646" target="_blank">
+                    <i class="fab fa-fw fa-whatsapp"></i>
+                    <span>Whatsapp</span>
+                </a>
             </li>
             <hr class="sidebar-divider">
             <div class="version" id="version-ruangadmin"></div>
         </ul>
         <!-- Sidebar -->
-        
+
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content" style="background-color: black;">
-                 <!-- TopBar -->
-                 <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-                      <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-                           <i class="fa fa-bars"></i>
-                      </button>
-                      <ul class="navbar-nav ml-auto">
-                           <li class="nav-item dropdown no-arrow">
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                     aria-labelledby="searchDropdown">
+                <!-- TopBar -->
+                <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <span class="badge badge-success badge-counter">1 </span>
+                            </a>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header bg-info-gradient">
+                                    INFO CENTER
+                                </h6>
+                                <div class="dropdown-item d-flex align-items-center">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-danger">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">April 16, 2024</div>
+                                        <span style="font-size:14px;">Rest Api By Wann</span>
+                                    </div>
                                 </div>
-                           </li>
-                           <li class="nav-item dropdown no-arrow mx-1">
-                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     <i class="fas fa-bell fa-fw"></i>
-                                     <span class="badge badge-success badge-counter">2 </span>
-                                </a>
-                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                     aria-labelledby="alertsDropdown">
-                                     <h6 class="dropdown-header bg-info-gradient">
-                                          INFO CENTER
-                                     </h6>
-                                     <a class="dropdown-item d-flex align-items-center" href="#">
-                                          <div class="mr-3">
-                                               <div class="icon-circle bg-danger">
-                                                    <i class="fas fa-info-circle text-white"></i>
-                                               </div>
-                                          </div>
-                                          <div>
-                                               <div class="small text-gray-500">May 05, 2021</div>
-                                               <span style="font-size:12px;">Delete Apikey: OneDayOneCharity</span>
-                                          </div>
-                                     </a>
-                                     <a class="dropdown-item d-flex align-items-center" href="#">
-                                          <div class="mr-3">
-                                               <div class="icon-circle bg-danger">
-                                                    <i class="fas fa-file-alt text-white"></i>
-                                               </div>
-                                          </div>
-                                          <div>
-                                               <div class="small text-gray-500">November 7, 2022</div>
-                                               <span style="font-size:14px;">Kelahiran Rest Api By Rull</span>
-                                          </div>
-                                     </a>
-                                </div>
-                           </li>
-                           <div class="topbar-divider d-none d-sm-block"></div>
-                           <li class="nav-item dropdown no-arrow">
-                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     <img class="img-profile rounded-circle" src="img/boy.png"
-                                          style="max-width: 60px">
-                                     <span class="ml-2 d-none d-lg-inline text-white small">Hello</span>
-                                </a>
-                           </li>
-                      </ul>
-                 </nav>
-            <!-- Topbar -->
+                            </div>
+                        </li>
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle" src="img/boy.png" style="max-width: 60px">
+                                <span class="ml-2 d-none d-lg-inline text-white small">Hello</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Topbar -->
 
-            <!-- Container Fluid-->
-            <div class="container-fluid" id="container-wrapper">
-                <div class="row mb-3">
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-success font-weight-bold text-uppercase mb-1">IP Address</div>
-                                        <br>
-                                        <div class="h5 mb-0 font-weight-bold text-white" id="ip">00.00.000.00</div>
-                                        <div class="mt-2 mb-0 text-muted text-xs">
-                                            <span class="mr-2"> Your IP Address</span>
+                <!-- Container Fluid-->
+                <div class="container-fluid" id="container-wrapper">
+                    <div class="row mb-3">
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-success font-weight-bold text-uppercase mb-1">IP Address
+                                            </div>
+                                            <br>
+                                            <div class="h5 mb-0 font-weight-bold text-white" id="ip">00.00.000.00</div>
+                                            <div class="mt-2 mb-0 text-muted text-xs">
+                                                <span class="mr-2"> Your IP Address</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-user icon-purple"></i>
+                                        <div class="col-auto">
+                                            <i class="fas fa-user icon-purple"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-success font-weight-bold text-uppercase mb-1">Visitor</div>
-                                        <br>
-                                        <div class="h5 mb-0 font-weight-bold text-white" id="visits">0</div>
-                                        <div class="mt-2 mb-0 text-muted text-xs">
-                                            <span class="mr-2"> Visit Web</span>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-success font-weight-bold text-uppercase mb-1">Visitor</div>
+                                            <br>
+                                            <div class="h5 mb-0 font-weight-bold text-white" id="visits">0</div>
+                                            <div class="mt-2 mb-0 text-muted text-xs">
+                                                <span class="mr-2"> Visit Web</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-eye icon-purple"></i>
+                                        <div class="col-auto">
+                                            <i class="fas fa-eye icon-purple"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-success font-weight-bold text-uppercase mb-1">Your Battery</div>
-                                        <br>
-                                        <span id="batteryLevel"></span>
-                                        <div class="h5 mb-0 font-weight-bold text-white" id="percentageLevel">0%</div>
-                                        <div class="mt-2 mb-0 text-muted text-xs">
-                                            <span class="mr-2">Percentase Your Battery</span>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-success font-weight-bold text-uppercase mb-1">Your Battery
+                                            </div>
+                                            <br>
+                                            <span id="batteryLevel"></span>
+                                            <div class="h5 mb-0 font-weight-bold text-white" id="percentageLevel">0%
+                                            </div>
+                                            <div class="mt-2 mb-0 text-muted text-xs">
+                                                <span class="mr-2">Percentase Your Battery</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-battery-half icon-purple"></i>
+                                        <div class="col-auto">
+                                            <i class="fas fa-battery-half icon-purple"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-success font-weight-bold text-uppercase mb-1">Clock</div>
-                                        <br>
-                                        <div class="h5 mb-0 font-weight-bold text-white" id="waktu">00 : 00 : 00</div>
-                                        <div class="mt-2 mb-0 text-muted text-xs">
-                                            <span class="mr-2" id="Ucapan"></span>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-success font-weight-bold text-uppercase mb-1">Clock</div>
+                                            <br>
+                                            <div class="h5 mb-0 font-weight-bold text-white" id="waktu">00 : 00 : 00
+                                            </div>
+                                            <div class="mt-2 mb-0 text-muted text-xs">
+                                                <span class="mr-2" id="Ucapan"></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-clock icon-purple"></i>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clock icon-purple"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--Row-->
                     </div>
-                    <!--Row-->
+                    <form action="/api/cekapikey">
+                        <div class="card card-round my-5 stretch-card grid-margin">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h4 class="m-0 font-weight-bold"><span class="text-success">CEK APIKEY </span><i class="fa fa-key text-warning" aria-hidden="true"></i></h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="status" style="font-size: 17px;"></p>
+                                <div class="form-group">
+                                    <input class="form-control font-weight-bold text-center" type="text"
+                                        placeholder="Masukkan Apikey" name="apikey" required>
+                                </div>
+                                <div class="form-group">
+                                    <center>
+                                        <button type="submit" class="btn btn-primary content-justify-center"><i
+                                                class="mdi mdi-arrow-right-bold-hexagon-outline"></i> <span
+                                                class="font-weight-bold"> Submit</span></button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row mb-5">
+                        <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="m-0 font-weight-bold "><span class="text-primary">Information </span><i class="fa fa-exclamation-triangle text-warning" aria-hidden="true"></i></h6>
+                                    <h6><br>
+                                        Rest Api Ini Free, Silahakan di pake dengan bijak. <br><br>Apikey Nya? <font
+                                            color="yellow">wannapi</font>
+                                        <br> Jika menemukan bug / error segera lapor <a
+                                            href="https://wa.me/6285646856646"> Owner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---Container Fluid-->
                 </div>
-                <form action="/api/cekapikey">
-                    <div class="card card-round my-5 stretch-card grid-margin">
-                      <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h4 class="m-0 font-weight-bold text-success">CEK APIKEY</h4>
-                      </div>
-                     <div class="card-body">
-                       <p class="status" style="font-size: 17px;"></p>
-                         <div class="form-group">
-                           <input class="form-control font-weight-bold text-center" type="text" placeholder="Masukkan Apikey" name="apikey" required>
-                         </div>
-                         <div class="form-group"><center>
-                           <button type="submit" class="btn btn-primary content-justify-center"><i class="mdi mdi-arrow-right-bold-hexagon-outline"></i> <span class="font-weight-bold"> Submit</span></button></center>
-                         </div>
-                     </div>
-                   </div>
-                  </form>
-                  <div class="row mb-5">
-                    <div class="col-md-12 grid-margin stretch-card">
-                    <div class="card">
-                    <div class="card-body">
-                        <h6 class="m-0 font-weight-bold text-primary">Information</h6>
-                    <h6><br>
-                    Rest Api Ini Free, Silahakan di pake dengan bijak. <br><br>Apikey Nya? <font color="yellow">wannapi</font>
-                    <br> Jika menemukan bug / error segera lapor <a href="https://wa.me/6285646856646"> Owner</a>
+                <!-- Footer -->
+                <footer class="sticky-footer bg-dark">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto text-light">
+                            <span>Copyright &copy; 2024 - Developed By
+                                <b><a href="https://github.com/irwanYT" target="_blank" class="text-white">Wann</a></b>
+                            </span>
+                        </div>
                     </div>
-                      </div>
-                    </div>
-                  </div>
-                <!---Container Fluid-->
+                </footer>
+                <!-- Footer -->
             </div>
-            <!-- Footer -->
-            <footer class="sticky-footer bg-dark">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto text-light">
-                        <span>Copyright &copy; 2021 - Developed By
-                            <b><a href="https://github.com/irwanYT" target="_blank" class="text-white">Wann</a></b>
-                        </span>
-                    </div>
-                </div>
-            </footer>
-            <!-- Footer -->
         </div>
-    </div>
 
-    <!-- Scroll to top -->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+        <!-- Scroll to top -->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
 
-    <script>
-        Swal.fire({
-          title: 'Welcome To Rest Api Wann',
-          text: 'Gunakan Dgn Bijak :)',
-          imageUrl: './img/logo/logo.jpg',
-          imageWidth: 200,
-          imageHeight: 200
-        })
-      </script>
-    <script src="./js/main.js"></script>
-    <script src="./vendor/jquery/jquery.min.js"></script>
-    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="./js/ruang-admin.min.js"></script>
+        <script>
+            Swal.fire({
+                title: 'Welcome To Rest Api Wann',
+                text: 'Gunakan Dgn Bijak :)',
+                imageUrl: './img/logo/logo.jpg',
+                imageWidth: 200,
+                imageHeight: 200
+            })
+        </script>
+        <script src="./js/main.js"></script>
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="./js/ruang-admin.min.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,7 @@ function getip() {
 // Visitor
 function getvisitor(){
     var xhr = new XMLHttpRequest();
-    var url = 'https://api.countapi.xyz/hit/restapiwann.vercel.app//visits';
+    var url = 'https://api.countapi.xyz/hit/restapiwann.vercel.app/visits';
     xhr.onloadend = function(){
     data = JSON.parse(this.responseText);
     document.getElementById("visits").textContent = data.value
@@ -23,6 +23,7 @@ function getvisitor(){
     xhr.open("GET", url, true);
     xhr.send();
     }
+
 
 //ucapan Tiap Hari
 Sayings = "";
