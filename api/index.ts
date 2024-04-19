@@ -20,21 +20,6 @@ app.get('/dosc', function (req, res) {
 });
 app.use('/api', require("./api.ts"));
 
-app.get('/config', (req, res) => {
-    const config = {
-        status: true,
-        result: {
-            prefix : '.',
-            namabot: 'Ceria-Bot',
-            namaowner: 'Wann',
-            instagram: 'irwns23_',
-            youtube : 'Gak Punya'
-        }
-    }
-    res.json(config)
-})
-
-
 app.listen(3000, () => console.log(color("Server running on port 3000",'green')));
 
 module.exports = app;
